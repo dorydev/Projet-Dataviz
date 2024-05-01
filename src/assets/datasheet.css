@@ -15,60 +15,6 @@ body
   max-height: 100%;
 }
 
-/*******
-  HOME
-********/
-
-.home-container
-{
-  height: 100%;
-  background-color: #f2f2f2;
-  padding-top: 20px;
-}
-
-.home-header
-{
-  background: linear-gradient(to left, #d8f1fe, #4a5e85);
-  height: 500px;
-  /*text*/
-  text-align: center;
-  justify-content: center;
-}
-
-.home-title
-{
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-}
-
-.header-text
-{
-  color: #ffffff;
-  display: flex;
-  margin: auto;
-  background: rgba(242, 242, 242,  0.15);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  z-index: 0;
-}
-
-.text-content1
-{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 75px;
-}
-
-.li-items
-{
-  align-items: center;
-  text-align: center;
-  width: 200px;
-}
 
 /************
   DASHBOARD
@@ -88,9 +34,19 @@ body
 
 .stat
 {
-  width: 100px;
+  width: 100%;
   height: auto;
   display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.camembert
+{
+  display: flex;
+  margin-left: 20%;
+
 }
 
 /**********
