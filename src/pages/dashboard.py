@@ -62,17 +62,7 @@ fig.update_layout(title='Grades by Subject', xaxis_title='Subject', yaxis_title=
 # Define the layout for the dashboard
 layout = dbc.Container([
     html.H1("Student Grades Dashboard"),
-
     html.Div([
-        html.Div([
-            dbc.Label('Liste des UE'),
-            dash_table.DataTable(
-                id='ue_table',
-                columns=[{'name': 'Libellé UE', 'id': 'libelle_ue'}],
-                data=[{'libelle_ue': ue.get_libelle_UE()} for ue in list_of_all_ue_object],
-                editable=False,
-            )
-        ]),
         html.Div([
             dcc.Graph(id='average-all-students', figure=fig_all_students),
         ], className="camembert"),
@@ -121,3 +111,12 @@ def update_graph(selected_student):
 
 layout_dashboard =  html.Div([layout], className="dashboard-container")
 
+"""        html.Div([
+            dbc.Label('Liste des UE'),
+            dash_table.DataTable(
+                id='ue_table',
+                columns=[{'name': 'Libellé UE', 'id': 'libelle_ue'}],
+                data=[{'libelle_ue': ue.get_libelle_UE()} for ue in list_of_all_ue_object],
+                editable=False,
+            )
+        ], className="ue-list"),"""
