@@ -9,7 +9,7 @@ import pandas as pd
 from data_analyser import DataReader1 , UEManager  , UniteEnseignement ,GlobalResult
 
 
-file_path = "E:\Personnel\Dev\Projets\Projet Dataviz\src\data\PV_L1_PC.xlsx"
+file_path = "D:\Personnel\Dev\Projets\Projet Dataviz\src\data\PV_L1_PC.xlsx" #change if needed
 data_reader = DataReader1(file_path, "Etud_" , "XX_FIN_PV_XX")
 
 ue_manager = UEManager( file_path ) 
