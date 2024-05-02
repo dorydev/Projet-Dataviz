@@ -10,8 +10,6 @@ from pages.dashboard import layout_dashboard
 #from pages.upload_data import layout_upload 
 from app import app, server
 
-GIT_URL = "https://github.com/dorydev/Projet-DataViz"
-
 
 #Principal layout de l'app
 app.layout = html.Div([
