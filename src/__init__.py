@@ -21,9 +21,9 @@ app.layout = html.Div([
 #Récupère les pages dans  le dossier : /pages pour les link entre elles
 @app.callback(Output('page-content', 'children'), [Input('url', 'pathname')])
 def display_pages(pathname):
-    #if pathname == '/' or pathname == '/home':
+    #if pathname == '/' or pathname == '/home': -> pour ajouter une homepage
     #    return layout_home
-    if pathname == '/dashboard':
+    if pathname == '/' or pathname == '/dashboard': #-> main page du projet
         return layout_dashboard
     #elif pathname == "/upload_data":
     #    return layout_upload
