@@ -2,10 +2,12 @@
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
+#import pages
 from pages.header import layout_navbar
 from pages.dashboard import layout_dashboard
+#Autres pages
 #from pages.home import layout_home
-#from pages.upload_data import layout_upload
+#from pages.upload_data import layout_upload 
 from app import app, server
 
 GIT_URL = "https://github.com/dorydev/Projet-DataViz"
