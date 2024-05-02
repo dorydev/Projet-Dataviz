@@ -4,6 +4,7 @@
 apt update
 apt install -y python3-pip
 
+#Install python libs
 pip3 install dash
 pip3 install dash_bootstrap_components
 pip3 install plotly
