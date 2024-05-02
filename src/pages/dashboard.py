@@ -70,17 +70,22 @@ layout = dbc.Container([
 
     #html.Hr(),
     html.Div([
-        dbc.Row([
-            dbc.Col(
-                dcc.Dropdown(
-                    id='student-dropdown',
-                    options=[{'label': num, 'value': num} for num in liste_id_numbers_etudiant],
-                    value=liste_id_numbers_etudiant[1],
-                    clearable=False
-                ),
-                width=6
-            )
-        ]),
+        html.P([
+            "Get your grades by student number"
+        ], className="paragraph"),
+        html.Div([
+            dbc.Row([
+                dbc.Col(
+                    dcc.Dropdown(
+                        id='student-dropdown',
+                        options=[{'label': num, 'value': num} for num in liste_id_numbers_etudiant],
+                        value=liste_id_numbers_etudiant[1],
+                        clearable=False
+                    ),
+                    width=6
+                )
+            ]),
+        ], className="dropdown"),
     ], className="dropdown-student"),
     html.Div([
         dbc.Row([
