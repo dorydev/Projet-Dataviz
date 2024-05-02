@@ -881,14 +881,14 @@ class  GlobalResult:
 
     def get_grades(self ):
         print(" ------------------ GET GRADES -----------------------")
-        #for items in  self.all_columns_ue["Result_Note_Ado/20"]:
-            #print(items)
+        for items in  self.all_columns_ue["Result_Note_Ado/20"]:
+            print(items)
         return self.all_columns_ue["Result_Note_Ado/20"]
     
     def get_students(self ):
         print(" ------------------ GET GRADES -----------------------")
-        #for items in  self.liste_of_num_students["Etud_Numér"]:
-        #    print(items)
+        for items in  self.liste_of_num_students["Etud_Numér"]:
+            print(items)
         return self.liste_of_num_students
 
     
