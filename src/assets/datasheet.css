@@ -7,6 +7,114 @@
 
 *******************************/
 
+/*Data*/
+:root, [data-theme="dark"] {
+  color-scheme: dark;
+  --body_bg: #202234;
+  --body_color_1: #fafafa;
+  --body_color_2: #fafafa;
+  --a_color: #6ecaf1;
+  --a_color_hover: #77ccf1;
+  --pre_color: #ff8763;
+  --ul_list_bg: #161724;
+  --ul_list_color: #bbbbbb;
+  --ul_list_box_shadow: #00000033;
+  --ul_list_border: rgb(50 52 74 / 95%);
+  --selection_color: #ffffff;
+  --selection_bg: #734cea;
+  --scrollbar_bg: #10111b;
+  --scrollbar_thumb: #3b3d52;
+  --purple_gradient_1: #734cea;
+  --purple_gradient_2: #a800bf;
+  --purple_gradient_3: #e000ff;
+  --purple_shadow_1: rgb(163 6 195);
+  --purple_shadow_2: rgb(115 76 234);
+  --details_bg: #2a2d44;
+  --details_border: rgb(63 65 92 / 95%);
+  --details_bg_hover: #313550;
+  --details_bg_open: #191b28;
+  --input_bg: #404358;
+  --input_color: #fafafa;
+  --input_border: rgb(94 95 114 / 95%);
+  --input_color_placeholder: #dadada;
+  --input_color_focus_placeholder: #c2c2c2;
+  --input_bg_focus: #484b63;
+  --input_border_focus: #8486a4;
+  --input_bg_submit: #343e59;
+  --input_color_submit: #fdfbf7;
+  --input_bg_submit_hover: #4c7dea;
+  --input_color_submit_hover: #fafafa;
+  --input_shadow_submit_hover: rgba(0,0,0,.2);
+  --progress_container_bg: #292b40;
+  --select2_bg: #3e4053;
+  --select2_border: rgb(75 76 97 / 95%);
+  --select2_bg_open: rgb(34 36 51 / 85%);
+  --footer_bg: #272a40;
+  --footer_shadow: rgba(0,0,0,.2);
+  --navbar_bg: #24263af7;
+  --navbar_shadow: rgba(0,0,0,.15);
+  --navbar_border: rgb(63 65 92 / 95%);
+  --navbar_bg_blur: rgb(45 47 66 / 85%);
+  --logo_shadow: rgba(157, 15, 199, 0.4);
+  --navbar_button_bg: #3c405f;
+  --navbar_button_active_bg: #5e3fbc;
+  --navbar_button_border: rgb(75 76 97 / 95%);
+  --navbar_button_border_hover: #8360ed;
+  --box_bg: #2a2d44;
+  --box_border: rgb(63 65 92 / 95%);
+  --box_shadow: rgb(0 0 0 / 20%);
+  --box_bg_warning: #ea4c4c;
+  --box_shadow_warning: rgb(255 0 0);
+  --box_bg_hover: #282b41;
+  --graph_grid_opacity: 0.3;
+  --graph_theme: 'dark';
+  --preview_bg: #ffffff;
+  --preview_shadow: rgba(0, 0, 0, 0.38);
+  --summary_details_bg: rgb(0 0 0 / 20%);
+  --summary_details_border: rgb(24 26 39 / 24%);
+  --summary_details_bg_hover: #313550;
+  --summary_details_border_hover: rgb(63 65 92 / 95%);
+  --summary_details_bg_open: #1c1e2d;
+  --summary_details_border_inside_open: #2b2d43;
+  --span_orange: #ff7768;
+  --span_vert: #2ecc71;
+  --span_jaune: #f1c40f;
+  --span_rouge: #e74c3c;
+  --span_field: #ff8763;
+  --span_field_value: #fafafa;
+  --field_tips_bg: #1c1d28;
+  --field_tips_color: #fafafa;
+  --field_tips_border: #4b556f;
+  --field_tips_shadow: rgb(21 23 32 / 90%);
+  --field_tips_title_bg: #343e59;
+  --field_tips_dot_border: #ff8763a1;
+  --bouton_diag_active_bg: #583ab2;
+  --a_white_bg: #ced3ff26;
+  --a_white_bg_hover: #bcc3ff61;
+  --img_copy_filter: saturate(0) brightness(1.4);
+  --img_copy_filter_hover: saturate(0) brightness(1.4);
+  --pan_menu_bg: #1e202c;
+  --pan_menu_shadow: rgb(0 0 0 / 35%);
+  --pan_hide_bg: #0000004f;
+  --page_title_bg: #2b2d3eb5;
+  --page_a_color: #ff8763;
+  --page_bg: #bf6449;
+  --h1_accueil_shadow: #0000003d;
+  --img_udiag_border: #313246;
+  --accueil_section_dark_bg: #161724;
+  --accueil_section_light_bg: #1d1e2e;
+  --chart_tooltip_bg: #20202d80;
+  --carousel_bg: #2B2D3E;
+  --carousel_border: rgb(57 59 84 / 95%);
+  --carousel_bg_hover: #252635;
+  --carousel_my_diag_bg: #35384e;
+  --carousel_my_diag_border: #9673ff;
+  --carousel_my_diag_bg_hover: #303246;
+  --carousel_a_visited_color: #9191ff;
+  --ringring_shadow: rgb(115 76 234 / 40%);
+}
+/***************************************************/
+
 body 
 {
   font-family: Arial, sans-serif;
@@ -23,7 +131,7 @@ body
 {
   width: 100%;
   height: 100%;
-  background-color: #f2f2f2;
+  background-color: #202234;/*#f2f2f2*/
   padding-top: 100px;
 }
 
@@ -81,7 +189,7 @@ h1
 ***********/
 .nav-link
 {
-  color: #000000;
+  color: #ffffff;
   font-size: 20px;
   margin: 20px;
   padding: 5px;
@@ -90,19 +198,23 @@ h1
 
 .nav-link:hover 
 {
-  color: #0070c0;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .navbar-items
 {
-  background-color: #ffffff;
-  width: 100%;
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
+  width: 100%;
+  height: 70px;
+  top: 0px;
+  z-index: 20;
+  background-color: var(--navbar_bg);
+  box-shadow: 0 0.5rem 1rem var(--navbar_shadow);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom: 1px solid var(--navbar_border);
+  transition: height 0.2s;
 }
 
 .align-navbar-items
@@ -125,3 +237,4 @@ h1
   vertical-align: middle;
   margin-left: 5px;
 }
+
